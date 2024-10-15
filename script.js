@@ -34,6 +34,13 @@ function efectoHabilidades(){
     }
 }
 
+function descargarCV() {
+    const link = document.createElement('a');
+    link.href = 'Pedro_Cereghetti.pdf'; // Ruta del archivo
+    link.download = 'Pedro_Cereghetti.pdf';
+    link.click();
+}
+
 
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
