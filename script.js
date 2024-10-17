@@ -42,6 +42,16 @@ function descargarCV() {
 }
 
 
+const galeria = document.querySelector('.galeria');
+
+galeria.addEventListener('mouseenter', () => {
+    galeria.style.animationPlayState = 'paused';
+});
+
+galeria.addEventListener('mouseleave', () => {
+    galeria.style.animationPlayState = 'running';
+});
+
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
     efectoHabilidades();
