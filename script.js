@@ -56,3 +56,13 @@ galeria.addEventListener('mouseleave', () => {
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const galeria = document.querySelector('.galeria');
+    const items = Array.from(galeria.children);
+
+    items.forEach(item => {
+        const clone = item.cloneNode(true);
+        galeria.appendChild(clone); // Duplicamos cada imagen
+    });
+});
